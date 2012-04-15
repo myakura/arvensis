@@ -1,0 +1,13 @@
+{
+    "name": "Arvensis",
+    "version": "0.1",
+    "description": "HTML tracker with more descriptive title.",
+    "manifest_version": 2,
+
+    "content_scripts": [{
+        "matches": [ "http://html5.org/tools/web-apps-tracker*" ],
+        "js": [ "content.js" ],
+        "run_at": "document_end"
+    }]
+}
+
