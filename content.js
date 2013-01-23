@@ -6,8 +6,8 @@
             summary  = document.querySelector('#log td:nth-of-type(3)').textContent.trim();
         document.title += ' \u2014 ' + revision + '. ' + summary;
     }
-    // Mozilla changeset
-    if (/http:\/\/hg\.mozilla\.org\//.test(url)) {
+    // Mercurial changeset
+    if (/http:\/\/hg\.mozilla\.org\/|https:\/\/dvcs\.w3\.org\/hg\/.*\/rev/.test(url)) {
         var summary = document.querySelector('.title').textContent.trim();
         document.title += ' \u2014 ' + summary;
     }
