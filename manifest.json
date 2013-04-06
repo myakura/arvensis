@@ -1,13 +1,14 @@
 {
     "name": "Arvensis",
-    "version": "0.2.1",
-    "description": "Changeset with descriptive title.",
+    "version": "0.2.2",
+    "description": "Changeset title with descriptive summary.",
     "manifest_version": 2,
     "content_scripts": [{
         "matches": [
         	"http://html5.org/tools/web-apps-tracker*",
         	"http://hg.mozilla.org/*/rev/*",
-        	"https://dvcs.w3.org/hg/*/rev/*"
+        	"https://dvcs.w3.org/hg/*/rev/*",
+            "https://*.googlesource.com/*/+/*"
         ],
         "js": [ "content.js" ],
         "run_at": "document_end"
