@@ -1,16 +1,9 @@
 {
   "name": "Arvensis",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Changeset title with descriptive summary.",
   "manifest_version": 2,
   "content_scripts": [
-    {
-      "matches": [
-        "*://html5.org/tools/web-apps-tracker*",
-        "*://html5.org/r/*"
-      ],
-      "js": [ "arvensis_html5org.js" ]
-    },
     {
       "matches": [
         "*://hg.mozilla.org/*/rev/*",
